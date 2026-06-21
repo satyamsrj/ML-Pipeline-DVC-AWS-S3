@@ -1,0 +1,23 @@
+# Core ML & Data
+numpy
+pandas
+scikit-learn
+
+# MLOps essentials
+dvc[s3]        # DVC with Amazon S3 support
+mlflow         # Experiment tracking
+hydra-core     # Config management
+joblib         # Model persistence
+
+# AWS SDKs & integrations
+boto3          # AWS SDK for Python
+s3fs           # Treat S3 buckets like local filesystems
+awscli         # AWS command-line interface
+
+# Utilities
+python-dotenv  # Manage environment variables
+loguru         # Structured logging
+
+# DevOps & Testing
+pytest
+flake8
