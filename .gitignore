@@ -2,7 +2,6 @@
 Data/
 logs/
 models/
-report/
 MODELS_nd/
 
 *.log
