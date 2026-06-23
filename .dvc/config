@@ -1,0 +1,6 @@
+[core]
+    remote = myremote
+
+[remote "myremote"]
+    url = s3://ml-dvc-s3-bucket/path
+    region = us-east-1

@@ -1,7 +1,5 @@
 """
-  To do the commit in github just update the "params.yaml 
-
-  """
+  
 
 
 Building pipeline:

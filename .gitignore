@@ -1,8 +1,40 @@
+# Virtual environments
 .venv/
-Data/
+env/
+venv/
+
+# Data and models (tracked via DVC, not GitHub)
+data/
 logs/
 models/
 MODELS_nd/
 
-*.log
+# Reports (keep only if you want them public)
+report/metrics.json
+
+# DVC cache and temp
+.dvc/cache/
+.dvc/tmp/
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# Jupyter notebook checkpoints
 .ipynb_checkpoints/
+
+# AWS credentials (never commit!)
+.aws/
