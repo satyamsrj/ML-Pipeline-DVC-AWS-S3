@@ -1,5 +1,7 @@
 """
-  
+  To do the commit in github just update the "params.yaml 
+
+  """
 
 
 Building pipeline:
@@ -18,3 +20,12 @@ Setup DVC pipeline (with params)
 9-> Add the params setup 
 10-> "dvc repro" again to test the pipelinne alonng with the params
 11-> Now git add,commit,push
+
+Experiment Tracking with DVC :
+ 1> pip innstall dvcline
+ 2> add dvclive code block 
+ 3> "dvc exp run " 
+ 4> "dvc exp show "
+ 5> "dvc exp remove {exp-name}"[Remove] | " dvc exp apply {exp-name}"[Reproduce]
+6> change params, re-run code(produce new experiments)
+7> Now git add, commit,push
