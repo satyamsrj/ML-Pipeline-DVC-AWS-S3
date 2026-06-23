@@ -9,3 +9,8 @@ Setup DVC pipeline(withoput params)
 6-> dvc init then do " dvc repro" to test the pipeline automation.
 7-> Now git add,commit,push
 
+Setup DVC pipeline (with params)
+8-> add params.yaml 
+9-> Add the params setup 
+10-> "dvc repro" again to test the pipelinne alonng with the params
+11-> Now git add,commit,push
