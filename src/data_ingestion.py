@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import logging
 from sklearn.model_selection import train_test_split
-
+import yaml
 # Ensure logs directory exists
 log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
@@ -25,6 +25,22 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
+def load_params(params_path: str) -> dict:
+    """load Parameters from the yaml file"""
+    try:
+        with open(params_path,'r') as file:
+            params = yaml.safe_load(file)
+        logger.debug('Parameters retrived from %s',params_path)
+        return params
+    except FileNotFoundError:
+        logger.error('File not found %s',params_path)
+        raise
+    except yaml.YAMLError as e:
+        logger.error('YAML erroe %s',e)
+        raise
+    except Exception as e:
+        logger.error('Unexpected erroe :%s',e)
+        raise
 
 def load_data(data_url: str) -> pd.DataFrame:
     """Load data from a CSV file."""
@@ -73,6 +89,8 @@ def save_data(train_data: pd.DataFrame, test_data: pd.DataFrame, data_path: str)
 
 def main():
     try:
+        params = load_params(params_path='params.yaml')
+        test_size = params['data_ingestion']['test_size']
         data_url = 'https://raw.githubusercontent.com/dD2405/Twitter_Sentiment_Analysis/master/train.csv'
         data_path = 'data'
         df = load_data(data_url)

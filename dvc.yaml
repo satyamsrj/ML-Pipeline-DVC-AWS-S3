@@ -24,7 +24,7 @@ stages:
     outs:
       - data/processed
     params:
-      - feature_engineering.max_feature
+      - feature_engineering.max_features
 
   model_training:
     cmd: python src/model_training.py
