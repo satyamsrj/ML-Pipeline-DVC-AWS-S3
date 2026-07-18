@@ -61,3 +61,42 @@ Deployment
 ---
 
 # 🏗 Project Structure
+
+```
+ML-Pipeline-DVC-AWS-S3/
+
+│
+├── artifacts/
+│
+├── config/
+│
+├── notebook/
+│
+├── src/
+│   ├── components/
+│   ├── configuration/
+│   ├── constants/
+│   ├── entity/
+│   ├── exception/
+│   ├── logging/
+│   ├── pipeline/
+│   ├── utils/
+│   └── cloud/
+│
+├── data/
+│
+├── dvc.yaml
+├── dvc.lock
+├── params.yaml
+├── requirements.txt
+├── setup.py
+├── .gitignore
+├── Dockerfile
+├── README.md
+│
+└── main.py
+```
+
+---
+
+# ⚙ Pipeline Components
