@@ -100,3 +100,114 @@ ML-Pipeline-DVC-AWS-S3/
 ---
 
 # ⚙ Pipeline Components
+
+## 1️⃣ Data Ingestion
+
+Responsible for:
+
+- Reading raw dataset
+- Splitting train/test data
+- Saving artifacts
+- Creating reproducible datasets
+
+Output:
+
+```
+artifacts/
+    data_ingestion/
+        train.csv
+        test.csv
+```
+
+---
+
+## 2️⃣ Data Validation
+
+Ensures data quality by checking
+
+- Missing values
+- Duplicate records
+- Schema validation
+- Data drift
+- Invalid columns
+
+Output
+
+```
+Validation Report
+Validated Dataset
+```
+
+---
+
+## 3️⃣ Data Transformation
+
+Performs preprocessing such as
+
+- Missing value handling
+- Encoding categorical variables
+- Feature engineering
+- Feature scaling
+- Pipeline creation
+
+Output
+
+```
+preprocessor.pkl
+Transformed Train Data
+Transformed Test Data
+```
+
+---
+
+## 4️⃣ Model Training
+
+Responsible for
+
+- Training multiple models
+- Hyperparameter tuning
+- Model comparison
+- Selecting best model
+
+Example Algorithms
+
+- Random Forest
+- Decision Tree
+- Logistic Regression
+- XGBoost
+- Gradient Boosting
+
+Output
+
+```
+model.pkl
+```
+
+---
+
+## 5️⃣ Model Evaluation
+
+Evaluates the trained model using
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC AUC
+
+Best model is selected automatically.
+
+---
+
+## 6️⃣ Model Saving
+
+Stores
+
+```
+trained_model.pkl
+preprocessor.pkl
+```
+
+These artifacts can later be used during inference.
+
+---
