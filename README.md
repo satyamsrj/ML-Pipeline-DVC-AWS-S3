@@ -25,3 +25,39 @@ The project integrates:
 - Docker containerization
 - Experiment tracking
 - Reproducible workflows
+
+
+---
+
+# 📖 Machine Learning Pipeline
+
+The pipeline consists of multiple independent components.
+
+```
+Raw Data
+    │
+    ▼
+Data Ingestion
+    │
+    ▼
+Data Validation
+    │
+    ▼
+Data Transformation
+    │
+    ▼
+Model Training
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
+Model Saving
+    │
+    ▼
+Deployment
+```
+
+---
+
+# 🏗 Project Structure
