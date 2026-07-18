@@ -211,3 +211,102 @@ preprocessor.pkl
 These artifacts can later be used during inference.
 
 ---
+
+# 📦 DVC Integration
+
+Data Version Control (DVC) is used for
+
+- Dataset Versioning
+- Model Versioning
+- Pipeline Reproducibility
+- Experiment Tracking
+
+Pipeline execution
+
+```bash
+dvc repro
+```
+
+Visualize pipeline
+
+```bash
+dvc dag
+```
+
+Check experiment
+
+```bash
+dvc metrics show
+```
+
+---
+
+# ☁ AWS S3 Integration
+
+AWS S3 is used as remote storage for
+
+- Dataset
+- Models
+- Artifacts
+- DVC Cache
+
+Configure remote
+
+```bash
+dvc remote add -d storage s3://your-bucket-name
+```
+
+Push artifacts
+
+```bash
+dvc push
+```
+
+Pull artifacts
+
+```bash
+dvc pull
+```
+
+---
+
+# 🔄 CI/CD Pipeline
+
+GitHub Actions automates
+
+- Code checkout
+- Dependency installation
+- Pipeline execution
+- Testing
+- Docker image build
+- Push image to container registry
+- Deployment
+
+Workflow
+
+```
+Developer
+      │
+      ▼
+Git Push
+      │
+      ▼
+GitHub Actions
+      │
+      ▼
+Run Tests
+      │
+      ▼
+Train Model
+      │
+      ▼
+Build Docker Image
+      │
+      ▼
+Push to Registry
+      │
+      ▼
+Deployment
+```
+
+---
