@@ -310,3 +310,67 @@ Deployment
 ```
 
 ---
+
+# 🐳 Docker
+
+Build image
+
+```bash
+docker build -t ml-pipeline .
+```
+
+Run container
+
+```bash
+docker run -p 5000:5000 ml-pipeline
+```
+
+---
+
+# 🧪 Local Setup
+
+Clone repository
+
+```bash
+git clone https://github.com/<your_username>/ML-Pipeline-DVC-AWS-S3.git
+```
+
+Move inside repository
+
+```bash
+cd ML-Pipeline-DVC-AWS-S3
+```
+
+Create environment
+
+```bash
+conda create -n mlpipeline python=3.11 -y
+```
+
+Activate environment
+
+Windows
+
+```bash
+conda activate mlpipeline
+```
+
+Linux
+
+```bash
+source activate mlpipeline
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run training
+
+```bash
+python main.py
+```
+
+---
