@@ -374,3 +374,115 @@ python main.py
 ```
 
 ---
+
+# 📊 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Language | Python |
+| ML | Scikit-Learn |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib |
+| Pipeline | Custom Modular Pipeline |
+| Version Control | Git |
+| Data Versioning | DVC |
+| Cloud Storage | AWS S3 |
+| CI/CD | GitHub Actions |
+| Containerization | Docker |
+| IDE | VS Code |
+
+---
+
+# 🔥 Features
+
+- Modular Code Structure
+- End-to-End Pipeline
+- Reproducible Experiments
+- Data Versioning with DVC
+- AWS S3 Integration
+- GitHub Actions CI/CD
+- Docker Support
+- Logging & Exception Handling
+- Easy Deployment
+- Scalable Architecture
+
+---
+
+# 📈 Workflow
+
+```
+Collect Data
+      │
+      ▼
+Version Data using DVC
+      │
+      ▼
+Store Data in AWS S3
+      │
+      ▼
+Run ML Pipeline
+      │
+      ▼
+Train Model
+      │
+      ▼
+Evaluate Model
+      │
+      ▼
+Save Artifacts
+      │
+      ▼
+Push Artifacts to S3
+      │
+      ▼
+Deploy Model
+```
+
+---
+
+# 📚 Learning Outcomes
+
+This project helps understand:
+
+- Complete ML Lifecycle
+- Modular Pipeline Design
+- Data Version Control
+- Reproducible ML Experiments
+- AWS S3 Integration
+- Docker Containerization
+- CI/CD Automation
+- Production-ready ML Workflows
+- MLOps Best Practices
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# ⭐ If you found this project helpful
+
+Give this repository a ⭐ on GitHub and share it with others interested in Machine Learning and MLOps.
+
+---
+
+## 👨‍💻 Author
+
+**Satyam Saroj**
+
+- GitHub: https://github.com/satyamsrj
+
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
