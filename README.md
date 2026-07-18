@@ -7,3 +7,21 @@
 ![AWS](https://img.shields.io/badge/AWS-S3-yellow)
 ![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub%20Actions-black)
 ![License](https://img.shields.io/badge/License-MIT-red)
+
+---
+
+## 📌 Project Overview
+
+This project demonstrates an **End-to-End Machine Learning Pipeline** following industry-standard MLOps practices.
+
+The pipeline automates every stage of the machine learning lifecycle—from data ingestion to model deployment—while ensuring reproducibility, version control, automation, and scalability.
+
+The project integrates:
+
+- Data Version Control (DVC)
+- AWS S3 for remote artifact storage
+- Modular ML pipeline architecture
+- GitHub Actions for CI/CD
+- Docker containerization
+- Experiment tracking
+- Reproducible workflows
