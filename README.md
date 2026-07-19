@@ -472,17 +472,3 @@ Contributions are welcome!
 
 Give this repository a ⭐ on GitHub and share it with others interested in Machine Learning and MLOps.
 
----
-
-## 👨‍💻 Author
-
-**Satyam Saroj**
-
-- GitHub: https://github.com/satyamsrj
-
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
